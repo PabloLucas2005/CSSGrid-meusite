@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas: "logo Home Novos Sites Lobos Bebes";
+  background: black;
+}
+
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 75%;
+  column-gap: 50px;
+  margin-top: 30px;
+
+}
+
+header nav ul li {
+  font-style: normal;
+
+}
+
+header nav ul li a {
+  color: white;
+  font-family: "acumin-pro", sans-serif !important;
+  font-weight: 400;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px solid #DE2D75;
+}
+
+.logo {
+  width: 100px;
+  margin: 30px;
+}
+
+.nav {
+  font-size: 40px;
+  color: #fff;
+
+}
+
+.Home {
+  grid-area: Home;
+  border-bottom: 3px solid #DE2D75;
+}
+
+.Novos {
+  grid-area: Novos;
+}
+
+.Sites {
+  grid-area: Sites;
+}
+
+.Lobos {
+  grid-area: Lobos;
+}
+
+.Bebes {
+  grid-area: Bebes;
+}
+
+main {
+  display: grid;
+  background: url(img/fundo.jpeg) no-repeat;
+  background-size: 2700px;
+  grid-template-rows: 100px 600px 100px 400px 100px;
+  grid-template-columns: auto 1000px;
+  grid-template-areas:
+    "title1 img1"
+    "about1 img1"
+    "img2 title2"
+    "img2 about2"
+    "img2 ."
+  ;
+}
+
+main h3.title {
+  grid-area: title1;
+  font-size: 50px;
+  color: white;
+  height: 70px;
+  font-family: "acumin-pro", sans-serif;
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 130px;
+}
+
+main h3 {
+  border-bottom: 3px solid #DE2D75;
+}
+
+.about {
+  grid-area: about1;
+  display: flex;
+  width: 600px;
+  color: white;
+  padding-left: 50px;
+  margin-top: 100px;
+  font-family: "acumin-pro", sans-serif;
+}
+
+.img1 {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 800px;
+  height: 300px 300px 300px 300px;
+  grid-area: img1;
+  border-radius: 1%;
+
+}
+
+.img2 {
+  border-radius: 1%;
+  width: 800px;
+  height: 500px 500px 500px 500px;
+  margin-left: 50px;
+}
+
+.title2 {
+  grid-area: title2;
+  font-size: 50px;
+  color: white;
+  font-family: "acumin-pro", sans-serif;
+  margin-left: 650px;
+  width: 230px;
+  height: 70px;
+}
+
+.about2 {
+  grid-area: about2;
+  color: white;
+  font-family: "acumin-pro", sans-serif;
+  width: 600px;
+  margin-left: 280px;
+}
